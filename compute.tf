@@ -15,7 +15,7 @@ resource "google_compute_instance" "canard" {
     access_config {
     }
   }
-  metadata_startup_script = "sudo apt-get update && sudo apt-get install apache2 -y && echo '<!doctype html><html><body><h1>Bonjour, Bienvenue dans le Cloud Computing - Terraform sur Google Cloud!</h1></body></html>' | sudo tee /var/www/html/index.html"
+  metadata_startup_script = "sudo apt-get update && sudo apt-get install apache2 -y && echo '<!doctype html><html><body><h1>Bonjour Georges DOSSOU, Bienvenue dans le Cloud Computing - Terraform sur Google Cloud!</h1></body></html>' | sudo tee /var/www/html/index.html"
 }
 
 #### VM MOUTON
